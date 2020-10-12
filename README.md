@@ -1,5 +1,5 @@
 # node-server
-Creating a node server that returns a json object
+Creating a node server that returns a string and is deployed on Heroku
 
 Tools used for bulding application:-
 1) Node.js
