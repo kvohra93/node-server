@@ -11,15 +11,11 @@ fs.readFile('data.json', function (err, data) {
     } 
 
 // define our server
-const server = http.createServer((req, res) => {
+http.createServer(function(req, res) {
   res.statusCode = 200
-  res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify({data}));
-})
-
-// start listening
-// use the server console to tell user where to find the server
-// use backticks for template literals with embedded expressions
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
+  res.setHeader(200,{"Content-Type": "application/json"});
+  res.write(JSON.stringify(data))
+  console.log(`Server running at http://${hostname}:${port}/`);
+  res.end();
+}).listen(port, hostname);
 })
