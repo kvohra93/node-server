@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Creating a node server and custom service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kvohra93/node-server.git"
+  },
+  "author": "Kunal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kvohra93/node-server/issues"
+  },
+  "homepage": "https://github.com/kvohra93/node-server#readme"
+}
